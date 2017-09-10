@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MyLoanCalculator</string>
+    <string name="title">Loan Calculator</string>
+    <string name="loanamount">Loan Amount</string>
+    <string name="termofloan">Term Of Loan (years)</string>
+    <string name="yearlyinterestrate">Yearly Interest Rate</string>
+</resources>
