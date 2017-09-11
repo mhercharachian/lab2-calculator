@@ -10,4 +10,5 @@
     <string name="monthly">Monthly Payment</string>
     <string name="total">Total Payment</string>
     <string name="totalInterest">Total Interest</string>
+    <string name="error">ERROR!</string>
 </resources>

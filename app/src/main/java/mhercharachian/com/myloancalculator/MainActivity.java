@@ -52,23 +52,25 @@ public class MainActivity extends AppCompatActivity {
     public void calculate(View v) {
         if(etNum1.getText().toString().equals("") || tryParseDouble(etNum1.getText().toString()) == false)
         {
-            result.setText("ERROR");
+            result.setText(R.string.error);
             error = true;
             clear(v);
         }
         else if(etNum2.getText().toString().equals("") || tryParseInt(etNum2.getText().toString()) == false)
         {
-            result.setText("ERROR");
+            result.setText(R.string.error);
             error = true;
             clear(v);
         }
         else if(etNum3.getText().toString().equals("") || tryParseDouble(etNum3.getText().toString()) == false)
         {
-            result.setText("ERROR");
+            result.setText(R.string.error);
             error = true;
             clear(v);
         }
         else{
+            error = false;
+            result.setText(R.string.result);
             num1 = Double.parseDouble(etNum1.getText().toString());
             num2 = Integer.parseInt(etNum2.getText().toString());
             num3 = Double.parseDouble(etNum3.getText().toString());
@@ -90,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
     public void clear(View w){
 
         if(error == false) {
-            result.setText("Results");
+            result.setText(R.string.result);
         }
         etNum1.setText("");
         etNum2.setText("");
